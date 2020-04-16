@@ -1,0 +1,59 @@
+<header class="section page-header" >
+	<div class="rd-navbar-wrap" >
+		<nav class="rd-navbar">
+			<div class="rd-navbar-main">
+				<div>
+					<div class="rd-nav-item" align="right">
+						<a class="rd-nav-link" href="#!addRecords">UPDATE RECORDS</a>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</div>
+</header>
+<div class="table-rounded table-responsive-sm">
+<div class="panel-heading" align="center" >
+	<h4>
+		<b>COVID RECORDS</b>
+	</h4>
+	<div align="left" style="margin-left:10px;">
+		<input type="text" placeholder="country" state="country" ng-model="country">
+		<button type="submit"
+				ng-enter="submit()" ng-click="submit()">Search</button>
+	</div>
+</div>
+	<table  class="table table-bordered table-hover">
+		<thead>
+			<tr role="row">
+			<th style="width: 100px;">Country,<br>Other</th>
+			<th style="width: 30px;">Total<br>Cases</th>
+			<th style="width: 30px;">New<br>Cases</th>
+			<th style="width: 30px;">Total<br>Deaths</th>
+			<th style="width: 30px;">New<br>Deaths</th>
+			<th style="width: 30px;">Total<br>Recovered</th>
+			<th style="width: 30px;">Active<br>Cases</th>
+			<th style="width: 30px;">Serious,<br>Critical</th>
+			<th style="width: 30px;">Tot&nbsp;Cases/<br>1M pop</th>
+			<th style="width: 30px;">Deaths/<br>1M pop</th>
+			<th style="width: 30px;"><br>First Case<br> Reported</th>
+		</thead>
+		<tbody>
+			<tr ng-repeat="record in Records">
+				<td class="table-country">{{record.country}}</td>
+				<td class="table-data" class="sorting_1">{{record.totalCases}}</td>
+				<td class="table-td1 empty">{{record.newCases}}</td>
+				<td class="table-data">{{record.totalDeaths}}</td>
+				<td class="table-td empty">{{record.newDeaths}}</td>
+				<td class="table-data">{{record.totalRecovered}}</td>
+				<td class="table-data">{{record.activeCases}}</td>
+				<td class="table-data">{{record.critical}}</td>
+				<td class="table-data">{{record.casesPop}}</td>
+				<td class="table-data">{{record.deathsPop}}</td>
+				<td class="table-data1">{{record.firstCase}}</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+
+

@@ -1,0 +1,111 @@
+h1, h2, h3, h4, h5, h6, .heading {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-family: Muli, sans-serif;
+	font-weight: 300;
+	color: #588edc;
+}
+
+body {
+	font-size: 14px;
+	letter-spacing: 0.05em;
+	background-color: #ffffff;
+	-webkit-text-size-adjust: none;
+	-webkit-font-smoothing: subpixel-antialiased;
+}
+@media (min-width: 768px) {
+	body {
+		font-size: 15px;
+	}
+}
+::selection {
+	background: rgba(38, 47, 60, 0.5);
+	color: #ffffff;
+}
+.btn-primary {
+	border-radius: 3px;
+	font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+	font-weight: 600;
+	letter-spacing: .05em;
+	text-transform: uppercase;
+	transition: .33s;
+}
+
+.btn-primary, .btn-primary:active, .btn-primary:focus {
+	color: #ffffff;
+	background: #16b6d2;
+	border-color: #16b6d2;
+}
+
+.btn-primary:hover {
+	color: #ffffff;
+	background: #000000;
+	border-color: #000000;
+}
+.rd-navbar-modern.rd-navbar-static .rd-navbar-element::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	width: 100vw;
+	background: linear-gradient(227deg, #0a81cc 0%, #00b8d9 100%);
+	border-radius: 10px;
+	z-index: -1;
+	border: 1px solid transparent;
+	transform: skewX(-13deg);
+	pointer-events: none;
+	backface-visibility: hidden;
+}
+.rd-search-results * + .match {
+	margin-top: 10px;
+}
+
+.rd-search-results .search-list-item + .search-list-item {
+	margin-top: 40px;
+}
+.rd-navbar-wrap, .rd-navbar,
+.rd-menu,
+.rd-navbar-nav,
+.rd-navbar-panel, .rd-navbar-static .rd-menu, .rd-navbar-fixed .rd-navbar-nav-wrap.active, .rd-navbar-fixed .rd-navbar-dummy, .rd-navbar-fixed .rd-navbar-submenu {
+	transition: 0.3s all ease-in-out;
+}
+
+
+.table-td{
+		font-weight: bold;
+		text-align:right;
+		background-color: red;
+	}
+.table-td:empty{
+	background-color: white;;
+}
+.table-td1{
+		font-weight: bold;
+		text-align:right;
+		background-color: #FFEEAA;
+	}
+.table-td1:empty{
+	background-color: white;
+}
+.table-data{
+	font-weight: bold;
+	text-align:right;
+}
+.table-country{
+	font-weight: bold;
+	font-size:15px;
+	text-align:left;
+}
+.table-bordered{
+	cell-padding:auto;
+	margin-left:10px;
+	margin-right:50px;
+	width:95%;
+}
+.table-data1{
+	font-weight: bold;
+	text-align:left;
+}
+	
+	
